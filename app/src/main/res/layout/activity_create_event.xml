@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+    <TextView
+
+        android:id="@+id/choosenDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Error" />
+    <TextView
+        android:id="@+id/title"
+        android:layout_below="@+id/choosenDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Title: "
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/txtDetails"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/choosenDate"
+        android:layout_toRightOf="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:onClick="showTimePicker"
+        android:id="@+id/timeButton"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:background="#000000"
+        android:text="Set Time"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_below="@+id/timeButton"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/detailsLable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Details:"
+        android:layout_below="@+id/time"
+        android:textSize="20dp"/>
+
+
+
+    <EditText
+        android:id="@+id/details"
+        android:layout_below="@+id/detailsLable"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="18dp"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:scrollbarFadeDuration="1000"/>
+
+
+    <Button
+        android:id="@+id/highlighted"
+        android:onClick="highlightedWord"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:background="#000000"
+        android:text="Replace Word"/>
+
+    <Button
+        android:id="@+id/save"
+        android:onClick="save"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/highlighted"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:background="#000000"
+        android:text="Save Event"/>
+
+    <EditText
+        android:id="@+id/thesaurusText"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/save"
+        android:layout_toLeftOf="@+id/thesaurus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/thesaurus"
+        android:onClick="thesaurus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/save"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:text="Thesaurus"/>
+
+    <EditText
+        android:id="@+id/synonyms"
+        android:layout_below="@+id/thesaurusText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="18dp"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:scrollbarFadeDuration="1000"/>
+
+
+</RelativeLayout>
+</ScrollView>

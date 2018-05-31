@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/listItemNo"
+        android:text="no"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/listItemName"
+        android:text="name"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="8dp"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"/>
+    <TextView
+        android:id="@+id/listItemDetails"
+        android:text="details"
+        android:layout_marginTop="2dp"
+        android:textSize="15dp"
+        android:layout_below="@+id/listItemName"
+        android:layout_marginLeft="48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/listItemDetails2"
+        android:text="details2"
+        android:layout_marginTop="2dp"
+        android:textSize="15dp"
+        android:layout_toRightOf="@+id/listItemDetails"
+        android:layout_below="@+id/listItemName"
+        android:layout_marginLeft="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
